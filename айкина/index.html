@@ -15,7 +15,9 @@
     <nav class="navbar navbar-expand-lg" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <i class="bi bi-bus-front"></i> Пассажирам.РФ
+                <!-- ЛОГОТИП вместо иконки автобуса -->
+                <img src="./img/logo2.svg" alt="Пассажирам.РФ" class="logo-img" style="height: 24px; width: auto; margin-right: 10px;">
+                Пассажирам.РФ
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -36,34 +38,50 @@
     </nav>
 
     <main class="container py-3">
+        <!-- СЛАЙДЕР С КАРТИНКАМИ -->
         <div class="swiper mb-4">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background: linear-gradient(135deg, #0d47a1, #007bff);">
-                    <div class="slide-content text-center p-4">
-                        <i class="bi bi-bus-front" style="font-size: 48px;"></i>
-                        <h3 class="text-white mt-2">Обучение вождению автобуса</h3>
-                        <p class="text-white-50 small">Станьте профессиональным водителем автобуса</p>
+                <!-- Слайд 1: Автобус -->
+                <div class="swiper-slide" style="background-image: url('./img/avtobys.jpg'); background-size: cover; background-position: center;">
+                    <div class="slide-overlay">
+                        <div class="slide-content text-center p-4">
+                            <i class="bi bi-bus-front" style="font-size: 48px; color: #ffffff;"></i>
+                            <h3 class="text-white mt-2">Обучение вождению автобуса</h3>
+                            <p class="text-white small" style="opacity: 0.8;">Станьте профессиональным водителем автобуса</p>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: linear-gradient(135deg, #1a237e, #0d47a1);">
-                    <div class="slide-content text-center p-4">
-                        <i class="bi bi-lightning" style="font-size: 48px;"></i>
-                        <h3 class="text-white mt-2">Электробусы — будущее</h3>
-                        <p class="text-white-50 small">Освойте управление современным электробусом</p>
+                
+                <!-- Слайд 2: Электробус -->
+                <div class="swiper-slide" style="background-image: url('./img/electro.jpg'); background-size: cover; background-position: center;">
+                    <div class="slide-overlay">
+                        <div class="slide-content text-center p-4">
+                            <i class="bi bi-lightning" style="font-size: 48px; color: #ffffff;"></i>
+                            <h3 class="text-white mt-2">Электробусы — будущее</h3>
+                            <p class="text-white small" style="opacity: 0.8;">Освойте управление современным электробусом</p>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: linear-gradient(135deg, #004d40, #00796b);">
-                    <div class="slide-content text-center p-4">
-                        <i class="bi bi-train-lightrail-front" style="font-size: 48px;"></i>
-                        <h3 class="text-white mt-2">Курсы вождения трамвая</h3>
-                        <p class="text-white-50 small">Надежная профессия в городском транспорте</p>
+                
+                <!-- Слайд 3: Трамвай -->
+                <div class="swiper-slide" style="background-image: url('./img/1_large.png'); background-size: cover; background-position: center;">
+                    <div class="slide-overlay">
+                        <div class="slide-content text-center p-4">
+                            <i class="bi bi-train-lightrail-front" style="font-size: 48px; color: #ffffff;"></i>
+                            <h3 class="text-white mt-2">Курсы вождения трамвая</h3>
+                            <p class="text-white small" style="opacity: 0.8;">Надежная профессия в городском транспорте</p>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: linear-gradient(135deg, #e65100, #f57c00);">
-                    <div class="slide-content text-center p-4">
-                        <i class="bi bi-award" style="font-size: 48px;"></i>
-                        <h3 class="text-white mt-2">Получите права категории D</h3>
-                        <p class="text-white-50 small">Официальное обучение с выдачей удостоверения</p>
+                
+                <!-- Слайд 4: Получение прав -->
+                <div class="swiper-slide" style="background-image: url('./img/scale_1200.png'); background-size: cover; background-position: center;">
+                    <div class="slide-overlay">
+                        <div class="slide-content text-center p-4">
+                            <i class="bi bi-award" style="font-size: 48px; color: #ffffff;"></i>
+                            <h3 class="text-white mt-2">Получите права категории D</h3>
+                            <p class="text-white small" style="opacity: 0.8;">Официальное обучение с выдачей удостоверения</p>
+                        </div>
                     </div>
                 </div>
             </div>

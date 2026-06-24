@@ -15,7 +15,8 @@
     <nav class="navbar navbar-expand-lg" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
-                <i class="bi bi-bus-front"></i> Пассажирам.РФ
+                <img src="../img/logo2.svg" alt="Пассажирам.РФ" style="height: 32px; width: auto; margin-right: 10px;">
+                Пассажирам.РФ
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -24,7 +25,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="profile.html">
-                            <i class="bi bi-person-circle"></i> <span id="userNameNav">Иван Иванов</span>
+                            <i class="bi bi-person-circle"></i> <span id="userNameNav">Гость</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -38,34 +39,43 @@
     </nav>
 
     <main class="container py-3">
-        <div class="swiper mb-4" style="height: 150px;">
+        <!-- Слайдер -->
+        <div class="swiper mb-4">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background: linear-gradient(135deg, #0d47a1, #007bff);">
-                    <div class="slide-content text-center p-3">
-                        <i class="bi bi-mortarboard" style="font-size: 36px;"></i>
-                        <h4 class="text-white mt-1">Обучение водителей</h4>
-                        <p class="text-white-50 small">Повышайте квалификацию</p>
+                <div class="swiper-slide" style="background-image: url('../img/avtobys.jpg'); background-size: cover; background-position: center;">
+                    <div class="slide-overlay">
+                        <div class="slide-content text-center p-3">
+                            <i class="bi bi-mortarboard" style="font-size: 30px; color: #ffffff;"></i>
+                            <h4 style="color: #ffffff; margin-top: 4px;">Обучение водителей</h4>
+                            <p style="color: #ffffff; opacity: 0.8; font-size: 12px;">Повышайте квалификацию</p>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: linear-gradient(135deg, #1a237e, #0d47a1);">
-                    <div class="slide-content text-center p-3">
-                        <i class="bi bi-award" style="font-size: 36px;"></i>
-                        <h4 class="text-white mt-1">Получите права</h4>
-                        <p class="text-white-50 small">Категория D, D1, E</p>
+                <div class="swiper-slide" style="background-image: url('../img/electro.jpg'); background-size: cover; background-position: center;">
+                    <div class="slide-overlay">
+                        <div class="slide-content text-center p-3">
+                            <i class="bi bi-award" style="font-size: 30px; color: #ffffff;"></i>
+                            <h4 style="color: #ffffff; margin-top: 4px;">Получите права</h4>
+                            <p style="color: #ffffff; opacity: 0.8; font-size: 12px;">Категория D, D1, E</p>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: linear-gradient(135deg, #004d40, #00796b);">
-                    <div class="slide-content text-center p-3">
-                        <i class="bi bi-building" style="font-size: 36px;"></i>
-                        <h4 class="text-white mt-1">Трудоустройство</h4>
-                        <p class="text-white-50 small">Помощь в трудоустройстве</p>
+                <div class="swiper-slide" style="background-image: url('../img/1_large.png'); background-size: cover; background-position: center;">
+                    <div class="slide-overlay">
+                        <div class="slide-content text-center p-3">
+                            <i class="bi bi-building" style="font-size: 30px; color: #ffffff;"></i>
+                            <h4 style="color: #ffffff; margin-top: 4px;">Трудоустройство</h4>
+                            <p style="color: #ffffff; opacity: 0.8; font-size: 12px;">Помощь в трудоустройстве</p>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: linear-gradient(135deg, #e65100, #f57c00);">
-                    <div class="slide-content text-center p-3">
-                        <i class="bi bi-people" style="font-size: 36px;"></i>
-                        <h4 class="text-white mt-1">Сообщество</h4>
-                        <p class="text-white-50 small">Общайтесь с коллегами</p>
+                <div class="swiper-slide" style="background-image: url('../img/scale_1200.png'); background-size: cover; background-position: center;">
+                    <div class="slide-overlay">
+                        <div class="slide-content text-center p-3">
+                            <i class="bi bi-people" style="font-size: 30px; color: #ffffff;"></i>
+                            <h4 style="color: #ffffff; margin-top: 4px;">Сообщество</h4>
+                            <p style="color: #ffffff; opacity: 0.8; font-size: 12px;">Общайтесь с коллегами</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,22 +86,22 @@
 
         <div class="row">
             <div class="col-12 col-lg-4">
-                <div class="card animate-on-scroll">
+                <div class="card">
                     <div class="card-body">
                         <h3 class="mb-3">
                             <i class="bi bi-person-circle" style="color: #007bff;"></i> 
-                            <span id="userName">Иван Иванов</span>
+                            <span id="userName">Гость</span>
                         </h3>
                         <hr>
-                        <p><strong>Логин:</strong> <span id="userLogin">ivan_2024</span></p>
-                        <p><strong>Email:</strong> <span id="userEmail">ivan@mail.ru</span></p>
-                        <p><strong>Телефон:</strong> <span id="userPhone">+7 (999) 123-45-67</span></p>
-                        <p><strong>Дата рождения:</strong> 15.05.1990</p>
-                        <p><strong>Зарегистрирован:</strong> 01.01.2026</p>
+                        <p><strong>Логин:</strong> <span id="userLogin">—</span></p>
+                        <p><strong>Email:</strong> <span id="userEmail">—</span></p>
+                        <p><strong>Телефон:</strong> <span id="userPhone">—</span></p>
+                        <p><strong>Дата рождения:</strong> <span id="userBirthDate">—</span></p>
+                        <p><strong>Зарегистрирован:</strong> <span id="userRegDate">—</span></p>
                     </div>
                 </div>
                 <div class="d-grid gap-2 mt-3">
-                    <a href="application.html" class="btn btn-primary rounded-pill py-2">
+                    <a href="application.html" class="btn btn-primary py-2">
                         <i class="bi bi-plus-circle"></i> Новая заявка
                     </a>
                 </div>
@@ -113,15 +123,10 @@
                 
                 <div class="tab-content mt-3">
                     <div class="tab-pane fade show active" id="applications">
-                        <div id="applicationsContainer">
-                            <!-- Заявки будут загружены динамически -->
-                        </div>
+                        <div id="applicationsContainer"></div>
                     </div>
-                    
                     <div class="tab-pane fade" id="feedbacks">
-                        <div id="feedbacksContainer">
-                            <!-- Отзывы будут загружены динамически -->
-                        </div>
+                        <div id="feedbacksContainer"></div>
                     </div>
                 </div>
             </div>
