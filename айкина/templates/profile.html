@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пассажирам.РФ - Личный кабинет</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="bi bi-bus-front"></i> Пассажирам.РФ
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <i class="bi bi-person-circle"></i> <span id="userNameNav">Иван Иванов</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html" onclick="localStorage.removeItem('currentUser')">
+                            <i class="bi bi-box-arrow-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-3">
+        <div class="swiper mb-4" style="height: 150px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: linear-gradient(135deg, #0d47a1, #007bff);">
+                    <div class="slide-content text-center p-3">
+                        <i class="bi bi-mortarboard" style="font-size: 36px;"></i>
+                        <h4 class="text-white mt-1">Обучение водителей</h4>
+                        <p class="text-white-50 small">Повышайте квалификацию</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: linear-gradient(135deg, #1a237e, #0d47a1);">
+                    <div class="slide-content text-center p-3">
+                        <i class="bi bi-award" style="font-size: 36px;"></i>
+                        <h4 class="text-white mt-1">Получите права</h4>
+                        <p class="text-white-50 small">Категория D, D1, E</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: linear-gradient(135deg, #004d40, #00796b);">
+                    <div class="slide-content text-center p-3">
+                        <i class="bi bi-building" style="font-size: 36px;"></i>
+                        <h4 class="text-white mt-1">Трудоустройство</h4>
+                        <p class="text-white-50 small">Помощь в трудоустройстве</p>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background: linear-gradient(135deg, #e65100, #f57c00);">
+                    <div class="slide-content text-center p-3">
+                        <i class="bi bi-people" style="font-size: 36px;"></i>
+                        <h4 class="text-white mt-1">Сообщество</h4>
+                        <p class="text-white-50 small">Общайтесь с коллегами</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="card animate-on-scroll">
+                    <div class="card-body">
+                        <h3 class="mb-3">
+                            <i class="bi bi-person-circle" style="color: #007bff;"></i> 
+                            <span id="userName">Иван Иванов</span>
+                        </h3>
+                        <hr>
+                        <p><strong>Логин:</strong> <span id="userLogin">ivan_2024</span></p>
+                        <p><strong>Email:</strong> <span id="userEmail">ivan@mail.ru</span></p>
+                        <p><strong>Телефон:</strong> <span id="userPhone">+7 (999) 123-45-67</span></p>
+                        <p><strong>Дата рождения:</strong> 15.05.1990</p>
+                        <p><strong>Зарегистрирован:</strong> 01.01.2026</p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3">
+                    <a href="application.html" class="btn btn-primary rounded-pill py-2">
+                        <i class="bi bi-plus-circle"></i> Новая заявка
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-8">
+                <ul class="nav nav-tabs" id="profileTabs" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#applications">
+                            <i class="bi bi-list-check"></i> Мои заявки (<span id="appsCount">0</span>)
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#feedbacks">
+                            <i class="bi bi-star"></i> Мои отзывы (<span id="fbCount">0</span>)
+                        </button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content mt-3">
+                    <div class="tab-pane fade show active" id="applications">
+                        <div id="applicationsContainer">
+                            <!-- Заявки будут загружены динамически -->
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="feedbacks">
+                        <div id="feedbacksContainer">
+                            <!-- Отзывы будут загружены динамически -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <small>© 2026 Пассажирам.РФ</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
